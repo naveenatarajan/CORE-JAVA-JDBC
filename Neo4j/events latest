@@ -1,0 +1,192 @@
+query{
+  getUpcomingEvents(userId:"30e7f60e-9a70-49f0-95bd-89c04ecf67e7"){
+    events{
+      id
+      name
+      startDate
+      endDate
+      privateEvent
+      payingEvent
+      bringAnything
+      bringToEvent
+      anySpecialCriteria
+      specialCriteria
+      description
+      pictureURL
+      sponsored
+      fromChat
+      openEvent
+      creator
+      detached
+      approvalStatus      
+    }
+  }
+}
+
+
+{
+  "data": {
+    "getUpcomingEvents": {
+      "events": [
+        {
+          "id": "faf3057e-7830-42b2-ad98-32bed892816b",
+          "name": "Navyn BdaeeE",
+          "startDate": 1528363560000,
+          "endDate": 1528802760000,
+          "privateEvent": true,
+          "payingEvent": false,
+          "bringAnything": true,
+          "bringToEvent": "Concert coupon",
+          "anySpecialCriteria": true,
+          "specialCriteria": "Navyn party",
+          "description": "BdaeeE vibes",
+          "pictureURL": "https://www.freewalldownload.com/super-star-rajinikanth/super-star-rajinikanth-kaala-movie-stills-free-hd-mobile-desktop-download-wallpapers.jpg",
+          "sponsored": true,
+          "fromChat": false,
+          "openEvent": true,
+          "creator": null,
+          "detached": null,
+          "approvalStatus": null
+        }
+      ]
+    }
+  }
+}
+
+
+*****************************************************
+
+query{
+  getUpcomingEventsExt(userId:"30e7f60e-9a70-49f0-95bd-89c04ecf67e7"){
+    events{
+      id
+      name
+      startDate
+      endDate
+      privateEvent
+      payingEvent
+      bringAnything
+      bringToEvent
+      anySpecialCriteria
+      specialCriteria
+      description
+      pictureURL
+      sponsored
+      fromChat
+      openEvent
+      creator
+      detached
+      approvalStatus    
+    }
+  }
+}
+
+{
+  "data": {
+    "getUpcomingEventsExt": {
+      "events": [
+        {
+          "id": "faf3057e-7830-42b2-ad98-32bed892816b",
+          "name": "Navyn BdaeeE",
+          "startDate": 1528363560000,
+          "endDate": 1528802760000,
+          "privateEvent": true,
+          "payingEvent": false,
+          "bringAnything": true,
+          "bringToEvent": "Concert coupon",
+          "anySpecialCriteria": true,
+          "specialCriteria": "Navyn party",
+          "description": "BdaeeE vibes",
+          "pictureURL": "https://www.freewalldownload.com/super-star-rajinikanth/super-star-rajinikanth-kaala-movie-stills-free-hd-mobile-desktop-download-wallpapers.jpg",
+          "sponsored": true,
+          "fromChat": false,
+          "openEvent": true,
+          "creator": true,
+          "detached": false,
+          "approvalStatus": "Approved"
+        }
+      ]
+    }
+  }
+}
+
+
+****************************************************************
+
+query{
+  getPastEventsExt(userId:"87d428bd-c59a-4508-ab52-892d40de9efc"){
+    events{
+      id
+      name
+      startDate
+      endDate
+      privateEvent
+      payingEvent
+      bringAnything
+      bringToEvent
+      anySpecialCriteria
+      specialCriteria
+      description
+      pictureURL
+      sponsored
+      fromChat
+      openEvent
+      creator
+      detached
+      approvalStatus    
+    }
+  }
+}
+
+
+
+{
+  "data": {
+    "getPastEventsExt": {
+      "events": [
+        {
+          "id": "74ecb7fe-dc43-46cf-a244-540a07538efe",
+          "name": "Thala",
+          "startDate": 1526094000000,
+          "endDate": 1527476400000,
+          "privateEvent": true,
+          "payingEvent": false,
+          "bringAnything": true,
+          "bringToEvent": "Concert coupon Thala",
+          "anySpecialCriteria": true,
+          "specialCriteria": "Thala party",
+          "description": "Thala vibes",
+          "pictureURL": "https://www.freewalldownload.com/super-star-rajinikanth/super-star-rajinikanth-kaala-movie-stills-free-hd-mobile-desktop-download-wallpapers.jpg",
+          "sponsored": true,
+          "fromChat": false,
+          "openEvent": true,
+          "creator": true,
+          "detached": false,
+          "approvalStatus": "Approved"
+        },
+        {
+          "id": "c420e4d5-5148-43ae-b1cd-5fceff669d21",
+          "name": "D16",
+          "startDate": 1528363560000,
+          "endDate": 1528772400000,
+          "privateEvent": true,
+          "payingEvent": false,
+          "bringAnything": true,
+          "bringToEvent": "Concert coupon D16",
+          "anySpecialCriteria": true,
+          "specialCriteria": "D16 party",
+          "description": "D16 vibes",
+          "pictureURL": "https://www.freewalldownload.com/super-star-rajinikanth/super-star-rajinikanth-kaala-movie-stills-free-hd-mobile-desktop-download-wallpapers.jpg",
+          "sponsored": true,
+          "fromChat": false,
+          "openEvent": true,
+          "creator": true,
+          "detached": false,
+          "approvalStatus": "Denied"
+        }
+      ]
+    }
+  }
+}
+
+************************************************************************************************

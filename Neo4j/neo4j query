@@ -1,0 +1,44 @@
+**** delete single node and all its relationships ----->>>
+
+MATCH (a:Event {description: "River Rally at chennai arena"})-[r]-() DELETE a, r
+
+**** delete node --->>>
+
+MATCH (a:UserInterest {name: "filmography"}) DELETE a
+
+**** delete relationship ---->>>
+
+MATCH (:UserInterest)-[r:INTERESTED_IN]-(:User) DELETE r
+
+**** delete all nodes ----->>>
+
+MATCH (n) DELETE n
+
+**** Delete Whole Database ---->>>>
+
+MATCH (n) DETACH DELETE n
+
+**** Remove Particular Relationship ----->>>>
+
+MATCH (:User)-[r:USERATTENDSRELATIONSHIP]-(:Event) 
+DELETE r
+
+MATCH (:User {firstName: "simbu"})-[r:ATTENDS]-(:Event {name: "Kaduvetti Guru"}) 
+DELETE r
+
+**** create relationship to two nodes ---->>>> 
+
+MATCH (a:User), (b:User)   
+WHERE a.zimId = "44311373-8b52-491f-86d4-521143e0cd21" AND b.zimId = "22382eaa-a7da-4ed0-82ec-55196174cae9"   
+CREATE (a)-[r:REVIEWED]->(b)   
+RETURN a,b
+
+**** create relationship with properties ---->>>>
+
+MATCH (a:User),(b:Event)
+WHERE a.zimId = "93e1f69c-3dd8-4448-9958-c2e610d85ba7" AND b.zimId = "4daff169-f02f-48f4-8be4-cef08615ebfb"   
+CREATE  (a)-[c:ATTENDS {approvalStatus: 'Approved', cohost: false, creator: true, detached: false, paid: false}]->(b)
+RETURN c
+
+
+
